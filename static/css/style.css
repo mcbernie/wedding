@@ -12,13 +12,14 @@
 body {
     /*background-image: url("/static/img/background.png");*/
     /*background-color: #f5f5f5;*/
-    background-color: #F4F3EF;
+    background-color: #F1EFE8;
     font-family: "ITC American Typewriter";
 }
 
-.content > .top-image {
-    margin:auto;
-    width: fit-content;
+.content > .top-image > img {
+    width: 150px;
+    height: auto;
+    max-width: 150px;
 }
 .content > .center-image {
     margin:auto;
@@ -26,13 +27,16 @@ body {
 }
 .content > .center-image > img {
     margin-top: -1rem;
+    width: 300px;
+    max-width: 300px;
+    height: auto;
     z-index: 1;
 }
 .content {
     width: fit-content;
     margin: auto;
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 2.5rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     overflow: auto;
@@ -55,23 +59,6 @@ body {
 }
 .content > h1:last-child {
     padding-bottom: 0;
-}
-@media only screen and (max-width: 768px) {
-    .content {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .content > h1 {
-        font-size: 1.8rem;
-    }
-    .content > h1 > .author {
-        font-size: 1.0rem;
-        padding-right: 0;
-    }
-    .content > .top-left-image {
-        position:relative;
-        margin: auto;
-    }
 }
 
 .content > h2 {
@@ -123,12 +110,39 @@ li.adress {
 .content > .footer > div {
     padding-bottom: 1rem;
 }
-.content > .bottom-image {
-    margin: auto;
-    width: fit-content;
+.content > .bottom-image > img {
+    float: right;
+    width: 200px;
+    max-width: 200px;
+    height: auto;
 }
 
 .content > .unterschrift {
-    margin: auto;
-    width: fit-content;
+    clear: right;
+    float: right;
+}
+
+.unterschrift_img {
+    width: 300px;
+    max-width: 300px;
+    height: auto;
+}
+.herz_img {
+    width: 40px;
+    max-width: 40px;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .content > h1 {
+        font-size: 1.8rem;
+    }
+    .content > h1 > .author {
+        font-size: 1.0rem;
+        padding-right: 0;
+    }
 }
