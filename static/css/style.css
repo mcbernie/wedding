@@ -11,39 +11,87 @@
 
 body {
     /*background-image: url("/static/img/background.png");*/
-    background-color: #fcfcfc;
+    background-color: #f5f5f5;
     font-family: "ITC American Typewriter";
+}
+.content > .top-left-image {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.content > .top-left-image > img {
+    position: relative;
+    width: 100px;
+}
+.content > .center-image {
+    margin:auto;
+    width: fit-content;
+}
+.content > .center-image > img {
+    width: 200px;
+    margin-top: -2rem;
+    z-index: 1;
 }
 .content {
     width: fit-content;
     margin: auto;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     overflow: auto;
     align: center;
+    font-size: 1.2rem;
 }
 .content > h1 {
+    margin: auto;
+    width: fit-content;
     font-size: 2.8rem;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
     font-weight: lighter;
     padding-bottom: 3.5rem;
+    text-align: center;
 }
 .content > h1 > .author {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     float: right;
     text-align: right;
+    margin-top: -0.5rem;
+}
+.content > h1:last-child {
+    padding-bottom: 0;
+}
+@media only screen and (max-width: 768px) {
+    .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .content > h1 {
+        font-size: 1.8rem;
+    }
+    .content > h1 > .author {
+        font-size: 1.0rem;
+        padding-right: 0;
+    }
+    .content > .top-left-image {
+        position:relative;
+        margin: auto;
+    }
 }
 
 .content > h2 {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
+    font-weight: normal;
     text-align: center;
 }
 
 .content > div.time {
     color: #B92100;
     font-weight: 900;
-    font-size: 1.9rem;
     text-align: center;
+    font-size: 1.9rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    z-index: 2;
 }
 
 
@@ -53,7 +101,7 @@ body {
     text-align:center;
     margin:0 auto;
     padding: 0;
-    padding-bottom: 2.0rem;
+    padding-bottom: 3.0rem;
 }
 
 .content > ul > li {
@@ -72,5 +120,17 @@ li.adress {
 }
 
 .content > .footer {
-    text-align: center;
+    margin: auto;
+    width: fit-content;
+}
+
+.content > .footer > div {
+    padding-bottom: 1rem;
+}
+
+.content > .unterschrift {
+    float: right;
+}
+.content > .unterschrift > img {
+    width: 300px;
 }
