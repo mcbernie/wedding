@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "ITC American Typewriter";
+    src: url("/.eot");
+    src: url("/static/fonts/242ad0e208069ad203d43f90c3854dc1.eot?#iefix") format("embedded-opentype"),
+         url("/static/fonts/242ad0e208069ad203d43f90c3854dc1.woff2") format("woff2"),
+         url("/static/fonts/242ad0e208069ad203d43f90c3854dc1.woff") format("woff"),
+         url("/static/fonts/242ad0e208069ad203d43f90c3854dc1.ttf") format("truetype"),
+         url("/static/fonts/242ad0e208069ad203d43f90c3854dc1.svg#ITC American Typewriter") format("svg");
+
+}
+
+body {
+    background-image: url("/static/img/background.png");
+    font-family: "ITC American Typewriter";
+}
+.content {
+    background-color: #fcfcfc;
+    width: fit-content;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 0.5rem;
+    overflow: auto;
+
+    /* try to add a shadow */
+    -webkit-box-shadow: 5px 10px 11px -2px rgba(0,0,0,0.41);
+    box-shadow: 5px 10px 11px -2px rgba(0,0,0,0.41);
+}
+.content > h1 {
+    margin-top: -2.5rem;
+    font-size: 2.8rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    font-weight: lighter;
+}
+.content > .author {
+    margin-top: -2rem;
+    float: right;
+    text-align: right;
+    padding-right: 7.5rem;
+}
+.content > .header > img {
+    width: 100%;
+}
+.content > .footer {
+    width: 100%;
+    overflow: auto;
+}
+.content > .footer > img {
+    width: 60%;
+    float: right;
+    padding-right: 0.5rem;
+}
