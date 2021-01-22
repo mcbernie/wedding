@@ -1,4 +1,9 @@
+
 <?php
+    /*
+        Wedding static website
+    */
     echo("Hello World");
-    readfile("./index.html");
+
+    include("./index.html");
 ?>
