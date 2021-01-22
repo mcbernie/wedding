@@ -11,25 +11,21 @@
 
 body {
     /*background-image: url("/static/img/background.png");*/
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
+    background-color: #F4F3EF;
     font-family: "ITC American Typewriter";
 }
-.content > .top-left-image {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-}
-.content > .top-left-image > img {
-    position: relative;
-    width: 100px;
+
+.content > .top-image {
+    margin:auto;
+    width: fit-content;
 }
 .content > .center-image {
     margin:auto;
     width: fit-content;
 }
 .content > .center-image > img {
-    width: 200px;
-    margin-top: -2rem;
+    margin-top: -1rem;
     z-index: 1;
 }
 .content {
@@ -127,10 +123,12 @@ li.adress {
 .content > .footer > div {
     padding-bottom: 1rem;
 }
+.content > .bottom-image {
+    margin: auto;
+    width: fit-content;
+}
 
 .content > .unterschrift {
-    float: right;
-}
-.content > .unterschrift > img {
-    width: 300px;
+    margin: auto;
+    width: fit-content;
 }
