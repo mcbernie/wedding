@@ -15,11 +15,14 @@ body {
     background-color: #F1EFE8;
     font-family: "ITC American Typewriter";
 }
-
+.content > .top-image {
+    overflow: show;
+    height: 9rem;
+}
 .content > .top-image > img {
-    width: 150px;
+    width: 250px;
     height: auto;
-    max-width: 150px;
+    max-width: 250px;
 }
 .content > .center-image {
     margin:auto;
@@ -32,6 +35,12 @@ body {
     height: auto;
     z-index: 1;
 }
+
+.center-image.big > img{
+    width: 500px;
+    max-width: 500px;
+}
+
 .content {
     width: fit-content;
     margin: auto;
@@ -65,6 +74,11 @@ body {
     font-size: 1.2rem;
     font-weight: normal;
     text-align: center;
+}
+
+h2.smaller {
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .content > div.time {
@@ -110,16 +124,13 @@ li.adress {
 .content > .footer > div {
     padding-bottom: 1rem;
 }
-.content > .bottom-image > img {
-    float: right;
-    width: 200px;
-    max-width: 200px;
-    height: auto;
+
+.unterschrift {
+    padding-top: 4rem;
 }
 
-.content > .unterschrift {
-    clear: right;
-    float: right;
+.unterschrift > .pre-text {
+    padding-bottom: 2rem;
 }
 
 .unterschrift_img {
@@ -133,6 +144,27 @@ li.adress {
     height: auto;
 }
 
+.img-right {
+    float: right;
+    clear: right;
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    margin-top: -3rem;
+}
+
+.content > .bottom-image {
+    overflow: show;
+    height: 9rem;
+    margin-top: -9rem;
+    float: right;
+}
+.content > .bottom-image > img {
+    width: 250px;
+    height: auto;
+    max-width: 250px;
+}
+
 @media only screen and (max-width: 768px) {
     .content {
         padding-left: 1rem;
@@ -144,5 +176,14 @@ li.adress {
     .content > h1 > .author {
         font-size: 1.0rem;
         padding-right: 0;
+    }
+    .content > .top-image {
+        overflow: show;
+        height: 100%;
+    }
+    .content > .bottom-image {
+        overflow: show;
+        margin-top: 0;
+        height: 100%;
     }
 }
